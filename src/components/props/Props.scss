@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 50px 30px;
 
     .mobile_text,
@@ -51,10 +51,12 @@
     }
 
     .mobile_description {
-        font-size: 20px;
+        font-size: 22px;
+        text-align: center;
         color: black;
         font-weight: 500;
-        word-spacing: 2px;
+        word-spacing: 1px;
+        line-height: normal;
     }
 
     .btn_content {
@@ -94,4 +96,26 @@
             }
         }
     }
+
+    &.white-text {
+        color: white;
+
+        .mobile_text,
+        .mobile_brend,
+        .mobile_item,
+        .mobile_description {
+            color: white;
+        }
+
+        .mobile_btn1 {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+
+        .mobile_btn2 {
+            color: white;
+            border: 1px solid white;
+        }
+    }
+
 }

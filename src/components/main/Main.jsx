@@ -3,6 +3,7 @@ import "./Main.scss"
 import Samsung from "../../assets/images/samsung.png"
 import home from "../../assets/images/Home.png"
 import television from "../../assets/images/television.png"
+import bg_img from "../../assets/images/bg.jpeg"
 
 const Main = () => {
     return (
@@ -15,6 +16,7 @@ const Main = () => {
                 Buy_btn="Buy now"
                 image={Samsung}
                 bg={"rgb(204, 224, 240)"}
+                back={""}
             />
             <Props
                 title="TV & Audio"
@@ -22,8 +24,8 @@ const Main = () => {
                 description="Save $2,200 on an 85 Class Samsung Neo QLED 8K QN900D and get our best picture in a huge range of contrast and color with Neo Quantum HDR 8K Pro."
                 learn_btn="Learn more"
                 Buy_btn="Buy now"
-                image={television}
-                bg={"#f7f6f6"}
+                back={bg_img}
+                isWhiteText
             />
             <Props
                 title="Home Appliances"
@@ -33,6 +35,7 @@ const Main = () => {
                 Buy_btn="Shop now"
                 image={home}
                 bg={"#f7f6f6"}
+                back={""}
             />
 
         </div>

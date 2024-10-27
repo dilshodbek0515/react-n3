@@ -8,7 +8,9 @@ const Props = (
         Buy_btn,
         learn_btn,
         image,
-        bg
+        back,
+        bg,
+        isWhiteText
     }
 ) => {
     const mobile = [
@@ -17,12 +19,20 @@ const Props = (
         ))
     ]
     return (
-        <section className="mobile" style={{ background: bg }}>
+        <section className={`mobile ${isWhiteText ? 'white-text' : ''}`}
+            style={{
+                background: bg,
+                backgroundImage: ` url( ${back})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover"
+
+            }}>
             <h2 className="mobile_text">{title}</h2>
             <ul className="mobile_content">
                 {mobile}
             </ul>
-            <img className="mobile_img" src={image} alt="mobile_img" />
+            <img className="mobile_img" src={image} alt="" />
             <h2 className="mobile_brend">{brend}</h2>
             <p className="mobile_description">{description}</p>
             <div className="btn_content">
