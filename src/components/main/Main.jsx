@@ -14,6 +14,7 @@ const Main = () => {
                 learn_btn="Learn more"
                 Buy_btn="Buy now"
                 image={Samsung}
+                bg={"rgb(204, 224, 240)"}
             />
             <Props
                 title="TV & Audio"
@@ -22,6 +23,7 @@ const Main = () => {
                 learn_btn="Learn more"
                 Buy_btn="Buy now"
                 image={television}
+                bg={"#f7f6f6"}
             />
             <Props
                 title="Home Appliances"
@@ -30,6 +32,7 @@ const Main = () => {
                 learn_btn="Learn more"
                 Buy_btn="Shop now"
                 image={home}
+                bg={"#f7f6f6"}
             />
 
         </div>

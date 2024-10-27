@@ -7,7 +7,8 @@ const Props = (
         description,
         Buy_btn,
         learn_btn,
-        image
+        image,
+        bg
     }
 ) => {
     const mobile = [
@@ -16,7 +17,7 @@ const Props = (
         ))
     ]
     return (
-        <section className="mobile">
+        <section className="mobile" style={{ background: bg }}>
             <h2 className="mobile_text">{title}</h2>
             <ul className="mobile_content">
                 {mobile}
@@ -28,7 +29,7 @@ const Props = (
                 <button className="mobile_btn1">{learn_btn}</button>
                 <button className="mobile_btn2">{Buy_btn}</button>
             </div>
-        </section>
+        </section >
     )
 }
 
